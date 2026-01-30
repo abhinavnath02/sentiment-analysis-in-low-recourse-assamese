@@ -32,6 +32,9 @@ data/interim/*
 !data/interim/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+data/seeds/*
+!data/seeds/youtube_sources.csv
+!data/seeds/news_sources.csv
 
 # VS Code
 .vscode/

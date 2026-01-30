@@ -1,5 +1,15 @@
 import re
 import unicodedata
+import regex
+
+def remove_emojis(text: str) -> str:
+    """
+    Removes emojis and other graphic symbols from text.
+    """
+    if not isinstance(text, str):
+        return ""
+    # Remove unicode emoji characters
+    return regex.sub(r'\p{Emoji}', '', text)
 
 def clean_text(text: str) -> str:
     """
